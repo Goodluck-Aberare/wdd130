@@ -3,8 +3,6 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
 }
-
-/* Header */
 header {
   display: flex;
   justify-content: space-between;
@@ -37,7 +35,6 @@ nav a.active {
   border-bottom: 2px solid #ffcc00;
 }
 
-/* About Page History Section */
 .history-layout {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -50,8 +47,6 @@ nav a.active {
   height: auto;
   border-radius: 8px;
 }
-
-/* Adventure Gallery */
 .adventure-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -69,8 +64,6 @@ nav a.active {
   height: auto;
   border-radius: 6px;
 }
-
-/* Company Info */
 .company-info {
   text-align: center;
   margin: 2rem 0;
@@ -80,8 +73,6 @@ nav a.active {
   color: #0077cc;
   text-decoration: none;
 }
-
-/* Contact Layout */
 .contact-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -99,8 +90,6 @@ nav a.active {
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
-
-/* Contact Form */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -150,8 +139,6 @@ nav a.active {
 .contact-form button:hover {
   background-color: #003344;
 }
-
-/* Employee Section */
 .employees {
   text-align: center;
   margin: 3rem auto;
@@ -184,8 +171,6 @@ nav a.active {
   font-style: italic;
   color: #555;
 }
-
-/* Footer */
 footer {
   display: flex;
   justify-content: space-between;
@@ -204,8 +189,6 @@ footer {
   width: 24px;
   height: 24px;
 }
-
-/* Responsive */
 @media (max-width: 768px) {
   .history-layout {
     grid-template-columns: 1fr;
