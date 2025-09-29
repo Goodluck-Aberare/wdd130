@@ -1,71 +1,75 @@
-:root {
-  --primary-color: #fcfcfc; /* forest green */
-  --secondary-color: #f4a261; /* warm sand */
-  --accent1-color: #264653; /* dark slate blue */
-  --accent2-color: #e9c46a; /* light golden yellow */
-  --heading-font: "Times New Roman", "Georgia", serif;
-  --body-font: Arial, Helvetica, sans-serif;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
 
 header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-  }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #004d66;
+  color: white;
+}
+.logo {
+  max-height: 60px;
 }
 
-body {
-  font-family: var(--body-font);
-  color: var(--accent1-color);
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  list-style: none;
 }
-
-header, main, footer {
-  width: 840px;
-  margin: 0 auto;
-}
-
-h1, h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-}
-
-nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
-}
-
-.socialmedia a {
-    text-decoration: none;
-}
-
-.hero {
-  position: relative;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 
-h1 {
-  position: absolute;
-  top: 20px;
+.history-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  align-items: center;
+}
+.history img {
   width: 100%;
-  padding: 16px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.adventure-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.adventure-gallery figure {
+  flex: 1 1 calc(20% - 1rem);
   text-align: center;
-  opacity: 0.7;
-  background-color: var(--accent1-color);
-  color: #fff; /* white text - make sure there is enough contrast with the background-color */
+}
+.adventure-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
 }
 
-.hero article img {
-  float: right;
-  width: 125px;
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #004d66;
+  color: white;
 }
-
+.social-icons {
+  display: flex;
+  gap: 0.5rem;
+}
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
