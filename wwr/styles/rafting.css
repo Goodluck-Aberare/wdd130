@@ -198,3 +198,147 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+.button, button {
+  background-color: #004d66;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.8rem 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.button:hover, button:hover {
+  background-color: #003344;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  background-image: url("images/white-water-hero.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+}
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.newsletter {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f5faff;
+}
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 250px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+.feature-grid img {
+  width: 100%;
+  border-radius: 10px;
+}
+.feature-grid h3 {
+  color: #004d66;
+  margin-top: 0.5rem;
+}
+
+.trip-descriptions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+.trip-descriptions .trip {
+  background-color: #f8f8f8;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.trip-descriptions img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.trip-table-section {
+  padding: 2rem;
+  text-align: center;
+}
+.trip-table {
+  width: 90%;
+  max-width: 900px;
+  margin: 1rem auto;
+  border-collapse: collapse;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.trip-table th, .trip-table td {
+  border: 1px solid #ccc;
+  padding: 0.8rem;
+}
+.trip-table th {
+  background-color: #004d66;
+  color: white;
+}
+.trip-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.cta {
+  background-color: #004d66;
+  color: white;
+  text-align: center;
+  padding: 2.5rem 1rem;
+  border-radius: 8px;
+  margin: 2rem auto;
+  max-width: 900px;
+}
+.cta a.button {
+  background-color: white;
+  color: #004d66;
+  margin-top: 1rem;
+  display: inline-block;
+}
+.cta a.button:hover {
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+  .trip-table th, .trip-table td {
+    font-size: 0.9rem;
+  }
+}
